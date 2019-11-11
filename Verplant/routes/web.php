@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/easteregg', function (){
+    return "Was machst du denn hier?";
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

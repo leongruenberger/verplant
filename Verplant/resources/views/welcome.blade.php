@@ -85,9 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Zu den Veranstaltungen</a>
-                    <a href="{{ route('login') }}">Login</a>
-                    <a href="{{ route('register') }}">Registrieren</a>
+                    <a href="{{ route('login') }}">Zu den Veranstaltungen</a>
+
 
                 </div>
             </div>
