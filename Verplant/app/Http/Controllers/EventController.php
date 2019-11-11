@@ -87,7 +87,7 @@ class EventController extends Controller
             'ort' => 'required',
         ]);
 
-        $product->update($request->all());
+        $event->update($request->all());
 
         return redirect()->route('events.index')
                         ->with('success','Product updated successfully');
@@ -103,7 +103,7 @@ class EventController extends Controller
     {
         $event->delete();
 
-        return redirect()->route('eventss.index')
+        return redirect()->route('events.index')
                         ->with('success','Event deleted successfully');
     }
 }

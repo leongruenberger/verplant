@@ -4,17 +4,17 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left my-4">
-            <h2>Add New Product</h2>
+            <h2>Füge eine neue Veranstaltung hinzu</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary mb-4" href="{{ route('products.index') }}"> Back</a>
+            <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> Back</a>
         </div>
     </div>
 </div>
 
 @if ($errors->any())
     <div class="alert alert-danger">
-        <strong>Ups!</strong> Die ist bei der Eingabe ein Fehler unterlaufen.<br><br>
+        <strong>Ups!</strong> Dir ist bei der Eingabe ein Fehler unterlaufen.<br><br>
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -29,20 +29,28 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
+                <strong>Veranstaltung:</strong>
                 <input type="text" name="name" class="form-control" placeholder="Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Detail:</strong>
+                <strong>Beschreibung:</strong>
                 <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Veranstaltungsort:</strong>
+                <input type="text" name="ort" class="form-control" placeholder="Veranstaltungsort">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Speichern</button>
         </div>
     </div>
+
 
 </form>
 @endsection

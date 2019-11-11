@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left my-4">
-                <h1>Mein erstes Laravel-Projekt</h1>
+                <h1>Das geht in der Umgebung!</h1>
             </div>
             <div class="pull-right mb-4">
                 <a class="btn btn-success" href="{{ route('events.create') }}"> Veranstaltung hinzufügen</a>
