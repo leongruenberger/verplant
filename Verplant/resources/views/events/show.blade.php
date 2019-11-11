@@ -5,9 +5,7 @@
             <div class="pull-left my-4">
                 <h2> Detailansicht</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> zurück</a>
-            </div>
+
         </div>
     </div>
 
@@ -24,5 +22,8 @@
                 {{ $event->detail }}</p>
             </div>
         </div>
+        <div class="pull-right">
+                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> zurück</a>
+            </div>
     </div>
 @endsection

@@ -21,8 +21,9 @@
     <table class="table table-bordered">
         <tr>
             <th>Nr.</th>
-            <th>Name</th>
-            <th>Details</th>
+            <th>Veranstaltung</th>
+            <th>Beschreibung</th>
+            <th>Veranstaltungsort</th>
             <th width="280px">Aktion</th>
         </tr>
         @foreach ($events as $event)
@@ -30,6 +31,7 @@
             <td>{{ ++$i }}</td>
             <td>{{ $event->name }}</td>
             <td>{{ $event->detail }}</td>
+            <td>{{ $event->ort}}</td>
             <td>
                 <form action="{{ route('events.destroy',$event->id) }}" method="POST">
 
