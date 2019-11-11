@@ -21,6 +21,8 @@ Route::get('/easteregg', function (){
 
 Auth::routes();
 
+Route::resource('/events','EventController');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'DemoController@userDemo')->name('user');
 Route::get('/admin', 'DemoController@adminDemo')->name('admin');
