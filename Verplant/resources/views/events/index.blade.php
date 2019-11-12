@@ -50,5 +50,4 @@
     </table>
 
     {!! $events->links() !!}
-
 @endsection

@@ -64,6 +64,7 @@
         </style>
     </head>
     <body>
+
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -85,11 +86,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/login') }}">Zu den Veranstaltungen</a>
+                    <a href="{{ url('/events') }}">Zu den Veranstaltungen</a>
 
 
                 </div>
             </div>
         </div>
+
     </body>
 </html>
