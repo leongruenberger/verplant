@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/events') }}">Zu den Veranstaltungen</a>
+                    <a href="{{ url('/login') }}">Zu den Veranstaltungen</a>
 
 
                 </div>
