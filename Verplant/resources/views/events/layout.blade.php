@@ -3,6 +3,7 @@
 <head>
     <title>Willkommen bei VerPlant</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 <style>

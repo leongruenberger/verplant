@@ -1,5 +1,4 @@
 @extends('events.layout')
-@extends('home')
 
 
 @section('content')
@@ -35,7 +34,7 @@
             <td>{{ $event->name }}</td>
             <td>{{ $event->detail }}</td>
             <td>{{ $event->ort}}</td>
-   
+  
             <td>
                 <form action="{{ route('events.destroy',$event->id) }}" method="POST">
 
@@ -56,37 +55,3 @@
     {!! $events->links() !!}
 @endsection
 
-@section('index')
-<div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left my-4">
-                <h1>Das geht in der Umgebung!</h1>
-            </div>
-            <div class="pull-right mb-4">
-                <a class="btn btn-success" href="{{ route('events.create') }}"> Veranstaltung hinzufügen</a>
-            </div>
-        </div>
-    </div>
-
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif
-
-    <table class="table table-bordered">
-        <tr>
-            <th>Tag der Veranstaltung</th>
-            <th>Veranstaltung</th>
-            <th>Beschreibung</th>
-            <th>Veranstaltungsort</th>
-            <th width="280px">Aktion</th>
-        </tr>
-        @foreach ($events as $event)
-        <tr>
-            <td>{{ $event->date }}</td>
-            <td>{{ $event->name }}</td>
-            <td>{{ $event->detail }}</td>
-            <td>{{ $event->ort}}</td>
-        </tr>
-@endsection

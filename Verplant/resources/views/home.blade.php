@@ -1,7 +1,7 @@
-@extends('events.layout')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
-   @yield('index')
+  @yield('content')
 </div>
 @endsection
