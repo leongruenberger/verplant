@@ -22,8 +22,20 @@
                 {{ $event->detail }}</p>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <p><strong>Veranstaltungsort:</strong>
+                {{ $event->ort }}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <p><strong>Datum:</strong>
+                {{ $event->date }}</p>
+            </div>
+        </div>
         <div class="pull-right">
-                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> zurück</a>
+                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> Zurück</a>
             </div>
     </div>
 @endsection

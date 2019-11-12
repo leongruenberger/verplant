@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left my-4">
-                <h2>Edit Event</h2>
+                <h2>Veranstaltung hinzufügen</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> Back</a>
+                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> Zurück</a>
             </div>
         </div>
     </div>
@@ -30,14 +30,26 @@
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
+                    <strong>Veranstaltung:</strong>
                     <input type="text" name="name" value="{{ $event->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Detail:</strong>
+                    <strong>Beschreibung:</strong>
                     <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $event->detail }}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Veranstaltungsort:</strong>
+                    <textarea class="form-control" style="height:150px" name="ort" placeholder="Veranstaltungsort">{{ $event->ort }}</textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Veranstaltungsdatum:</strong>
+                    <textarea class="form-control" style="height:150px" name="date" placeholder="Datum">{{ $event->date }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

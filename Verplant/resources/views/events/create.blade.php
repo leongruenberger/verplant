@@ -33,19 +33,28 @@
                 <input type="text" name="name" class="form-control" placeholder="Name">
             </div>
         </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Beschreibung:</strong>
                 <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail"></textarea>
             </div>
         </div>
-        <div class="row">
+        
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Veranstaltungsort:</strong>
                 <input type="text" name="ort" class="form-control" placeholder="Veranstaltungsort">
             </div>
         </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Datum</strong>
+                <input type="text" name="date" class="form-control" placeholder="YYYY.MM.DD">
+            </div>
+        </div>
+
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Speichern</button>
         </div>

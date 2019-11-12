@@ -20,7 +20,7 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>Nr.</th>
+            <th>Tag der Veranstaltung</th>
             <th>Veranstaltung</th>
             <th>Beschreibung</th>
             <th>Veranstaltungsort</th>
@@ -28,7 +28,7 @@
         </tr>
         @foreach ($events as $event)
         <tr>
-            <td>{{ ++$i }}</td>
+            <td>{{ $event->date }}</td>
             <td>{{ $event->name }}</td>
             <td>{{ $event->detail }}</td>
             <td>{{ $event->ort}}</td>
