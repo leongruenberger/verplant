@@ -26,5 +26,6 @@ Route::resource('/events','EventController')->middleware('auth');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'DemoController@userDemo')->name('user');
 Route::get('/admin', 'DemoController@adminDemo')->name('admin');
+Route::get('/overview', 'OverviewController@overview');
 
 
