@@ -19,7 +19,9 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-
+    
+    @if (Route::has('login'))
+    @auth
     <table class="table table-bordered">
         <tr>
             <th>Tag der Veranstaltung</th>
@@ -38,15 +40,60 @@
             <td>
                 <form action="{{ route('events.destroy',$event->id) }}" method="POST">
 
+                    
                     <a class="btn btn-info" href="{{ route('events.show',$event->id) }}">Details</a>
+                    <a class="btn btn-primary" href="{{ route('events.edit',$event->id) }}">Bearbeiten</a>
 
-                    @csrf
-                    @method('DELETE')
+                     @csrf
+                     @method('DELETE')
+
+                    <button type="submit" class="btn btn-danger">Löschen</button>
+                
+                </div>
+            
                 </form>
             </td>
         </tr>
         @endforeach
     </table>
+    @else
+    <table class="table table-bordered">
+        <tr>
+            <th>Tag der Veranstaltung</th>
+            <th>Veranstaltung</th>
+            <th>Beschreibung</th>
+            <th>Veranstaltungsort</th>
+            <th width="280px">Aktion</th>
+        </tr>
+        @foreach ($events as $event)
+        <tr>
+            <td>{{ $event->date }}</td>
+            <td>{{ $event->name }}</td>
+            <td>{{ $event->detail }}</td>
+            <td>{{ $event->ort}}</td>
+  
+            <td>
+                <form action="{{ route('events.destroy',$event->id) }}" method="POST">
 
+                    
+                    <a class="btn btn-info" href="{{ route('events.show',$event->id) }}">Details</a>
+
+                    
+                    @auth
+                        
+                    
+ 
+                    
+                   
+                    @endauth
+                </div>
+            
+                </form>
+            </td>
+        </tr>
+        @endforeach
+        @endauth
+    </table>
+    @endif
     {!! $events->links() !!}
 @endsection
