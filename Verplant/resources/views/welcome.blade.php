@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="{{ asset('js/app.js') }}" defer></script>
         <style>
             html, body {
                 background-color: #fff;
@@ -61,6 +63,10 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            a#button{color: #fff;
+
+            }
         </style>
     </head>
     <body>
@@ -69,7 +75,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                      
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -86,8 +92,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/overview') }}">Zu den Veranstaltungen</a>
-
+                    
+                    <a id='button' class="btn btn-success" href="{{ url('/overview') }}">Zu den Veranstaltungen</a>
+                    
 
                 </div>
             </div>
