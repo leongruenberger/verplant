@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -30,6 +31,8 @@ class EventController extends Controller
      */
     public function create()
     {
+       $user = Auth::user();
+       $user->authorizeRoles(['admin', 'editor']);
         return view('events.create');
     }
 
@@ -72,6 +75,8 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
+        $user = Auth::user();
+        $user->authorizeRoles(['admin', 'editor']);
         return view('events.edit',compact('event'));
     }
 
@@ -104,6 +109,8 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
+        $user = Auth::user();
+        $user->authorizeRoles(['admin', 'editor']);
         $event->delete();
 
         return redirect()->route('events.index')
