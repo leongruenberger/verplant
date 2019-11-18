@@ -110,7 +110,7 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         $user = Auth::user();
-        $user->authorizeRoles(['admin', 'editor']);
+        $user->authorizeRoles(['admin']);
         $event->delete();
 
         return redirect()->route('events.index')
