@@ -7,7 +7,7 @@
             <h2>Füge eine neue Veranstaltung hinzu</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> Back</a>
+            <a class="btn btn-primary mb-4" href="{{ url('/overview') }}"> Back</a>
         </div>
     </div>
 </div>

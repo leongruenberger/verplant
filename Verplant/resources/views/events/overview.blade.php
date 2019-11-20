@@ -10,6 +10,7 @@
             </div>
             <div class="pull-right mb-4">
                 <a class="btn btn-success" href="{{ route('events.create') }}"> Veranstaltung hinzufügen</a>
+                <a class="btn btn-success" id="ajax" > Ajax Button</a>
             </div>
         </div>
     </div>
