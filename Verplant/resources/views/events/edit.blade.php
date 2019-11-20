@@ -7,7 +7,7 @@
                 <h2>Veranstaltung hinzufügen</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary mb-4"href="{{ url('/overview') }}"> Zurück</a>
+                <a class="btn btn-primary mb-4" href="{{ route('events.index') }}"> Zurück</a>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <button type="submit" class="btn btn-primary" href="{{ url('/overview') }}"> Speichern</button>
+              <button type="submit" class="btn btn-primary">Speichern</button>
             </div>
         </div>
 
