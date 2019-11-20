@@ -93,7 +93,7 @@
 
                 <div class="links">
                     
-                    <a id='button' class="btn btn-success" href="{{ url('/events') }}">Zu den Veranstaltungen</a>
+                    <a id='button' class="btn btn-success" href="{{ url('/overview') }}">Zu den Veranstaltungen</a>
                     
 
                 </div>

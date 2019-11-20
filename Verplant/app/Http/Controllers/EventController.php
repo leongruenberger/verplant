@@ -33,6 +33,7 @@ class EventController extends Controller
      */
     public function create()
     {
+       
        $user = Auth::user();
        $user->authorizeRoles(['admin', 'editor']);
         return view('events.create');
