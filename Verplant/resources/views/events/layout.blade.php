@@ -18,6 +18,7 @@ table{background-color: #fff;color: black;}
 table strong{color: black;}
 h2,h1{color: #fff;}
 strong,p{color: #fff;}
+a#ajax{color: #fff;}
 </style>
 <body style="background-image: url('https://images.unsplash.com/photo-1485872299829-c673f5194813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=782&q=80');background-size:cover;">
 <div id="app">
