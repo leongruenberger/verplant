@@ -43,6 +43,7 @@
 
                     
                     <a class="btn btn-info" href="{{ route('events.show',$event->id) }}">Details</a>
+                    
                     <a class="btn btn-primary" href="{{ route('events.edit',$event->id) }}">Bearbeiten</a>
 
                      @csrf

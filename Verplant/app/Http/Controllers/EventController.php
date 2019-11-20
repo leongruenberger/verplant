@@ -52,7 +52,8 @@ class EventController extends Controller
             'detail' => 'required',
             'ort' => 'required',
         ]);
-
+        //$request['user_id'] = Auth::user()->user_id;
+        
         Event::create($request->all());
 
         return redirect()->route('events.index')
