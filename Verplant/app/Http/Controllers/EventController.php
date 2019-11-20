@@ -24,6 +24,8 @@ class EventController extends Controller
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
+    
+
     /**
      * Show the form for creating a new resource.
      *
